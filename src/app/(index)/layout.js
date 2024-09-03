@@ -4,6 +4,7 @@ import Footer from '@/components/footer'
 import UseMode from '@/components/modeSwitcher'
 import Header from '@/components/header'
 import authenticated from '@/utils/checkLogin'
+import { redirect } from 'next/navigation'
 
 const inter = Inter({ subsets: ['latin'] })
 

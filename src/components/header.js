@@ -21,7 +21,7 @@ export default function Header() {
   }, []);
  
   const navList = (
-    <div className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 dark:text-white">
+    <div className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-black dark:text-white">
       <Typography
         as="li"
         variant="small"
@@ -36,7 +36,7 @@ export default function Header() {
         variant="small"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <a href="/manage" className="flex items-center">
           Config
         </a>
       </Typography>

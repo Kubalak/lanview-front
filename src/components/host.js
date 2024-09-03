@@ -5,15 +5,17 @@ import Link from "next/link";
 import app from "@/utils/createAxios";
 import {MdHttp, MdHttps} from 'react-icons/md';
 import {VscRemote,VscRemoteExplorer} from 'react-icons/vsc';
-import {AiOutlineMail} from 'react-icons/ai';
+import {AiOutlineMail, AiFillWindows} from 'react-icons/ai';
 import {FiServer,FiDatabase} from 'react-icons/fi';
-
+import {BsFillHddNetworkFill} from 'react-icons/bs'
 const portToIcon = {
     22: <VscRemote className="w-5 h-5"/>,
     25: <AiOutlineMail className="w-5 h-5"/>,
     20: <FiServer className="w-5 h-5"/>,
     80: <MdHttp className="w-5 h-5"/>,
     443: <MdHttps className="w-5 h-5"/>,
+    445: <BsFillHddNetworkFill className="w-5 h-5"/>,
+    135: <AiFillWindows className="w-5 h-5"/>,
     3389: <VscRemoteExplorer className="w-5 h-5"/>,
     3306: <FiDatabase className="w-5 h-5"/>
 }

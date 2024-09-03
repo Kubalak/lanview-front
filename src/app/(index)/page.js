@@ -1,8 +1,6 @@
 import Host from "@/components/host";
 import app from "@/utils/createAxios";
 import { cookies } from "next/headers";
-import { Suspense } from "react";
-import Loader from "./loading";
 import ScanTooltip from "@/components/scantooltip";
 
 export const metadata = {

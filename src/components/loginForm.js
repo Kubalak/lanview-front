@@ -24,7 +24,11 @@ export default function LoginForm(){
             }
         })
         .then(response => {
-            router.push('/')
+            return response.data
+        })
+        .then(data => {
+            if(data.authenticated === true)
+                router.push('/')
         })
         .catch(error => {
             console.warn(error)
